@@ -1,6 +1,6 @@
 #!/bin/zsh
-docker run -it --rm --name {{proj}}dev \
+docker run -it --rm --name ghatest2dev \
         -v $PWD:/home/andy/app \
-        -v /home/andy/data/{{repo}}/{{proj}}/test:/home/andy/data \
+        -v /home/andy/data/ghatest2/ghatest2/test:/home/andy/data \
         -w /home/andy/app \
-        {{proj}}dev /bin/zsh $1
+        ghatest2dev /bin/zsh $1
